@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tamburins</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="script.js" defer></script>
+    <!-- font -->
+    <link href="http://fonts.cdnfonts.com/css/butler-stencil" rel="stylesheet">
+    <style>
+    @import url('http://fonts.cdnfonts.com/css/butler-stencil');
+    </style>
+    <!-- 한글 font(일반 바탕체는 맥북에서는 안먹음) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="nonmemb_pop">
+        <form name="frm" method="post" action="check_non.php">
+            <ul class="nonmemb_list">
+                <li><img src="img/logo_small.png"></li>
+                <li>
+                    <input type="text" class="nonmemb_text" name="id" placeholder="주문 번호를 입력하세요">
+                </li>
+                <li>
+                    <input type="button" class="nonmemb_bt" value="주문 조회" onclick="send()">
+                </li>
+                <li><a href="">주문번호를 잊으셨나요?</a></li>
+            </ul>
+            <script>
+                function send(){
+                    if(frm.id.value==""){
+                        alert("주문 번호를 입력하세요.");
+                        frm.id.focus();return false;
+                    }else{
+                        document.frm.submit();
+                    }
+                }
+            </script>
+        </form>
+    </div>
+</body>
+</html>

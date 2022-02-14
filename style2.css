@@ -1,0 +1,209 @@
+*{margin: 0 auto;padding: 0;list-style: none;font-family: 'Noto Sans KR', sans-serif;}
+a{text-decoration: none;color: inherit;}
+/* 관리자- hedaer */
+header{
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid lightgray;
+    position: relative;
+}
+#header_wrap{
+    width: 1200px;
+    height: 80px;
+    display: flex;
+}
+#logo{
+    width: 250px;
+    height: 50px;
+    margin-top: 15px;
+}
+#logo>img{
+    height: 100%;
+    width: 100%;
+}
+#menu{
+    width: 600px;
+    height: 80px;
+}
+#menu>li{
+    float: left;
+    width: 150px;
+    height: 80px;
+    cursor: pointer;
+}
+.menu_wrap{
+    width: 150px;
+    height: 80px;
+}
+.menu_wrap>li{
+    width: 100%;
+    text-align: center;
+}
+.menu_wrap>li:first-child{
+    height: 50px;
+}
+.menu_wrap>li>img{
+    height: 70%;
+    margin-top: 10px;
+}
+.menu_wrap>li:last-child{
+    height: 30px;
+    font-weight: bold;
+    line-height: 35px;
+    color: #333;
+}
+#menu>li:hover .menu_wrap>li{
+    color: #003494;
+}
+.login_bt{
+    width: 150px;
+    height: 50px;
+    margin-top: 15px;
+    border:1px solid #333;
+    background-color: white;
+    color: #333;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all .4s;
+}
+.login_bt:hover{background-color: #333;color: white;}
+/* 관리자 본문 */
+article{
+    width: 1200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+section{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.nav{
+    height: 40px;
+    width: 440px;
+}
+.nav>li{
+    float: left;
+    width: 200px;
+    margin-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: lightgray;
+    color:white;
+    text-shadow: 2px 2px 3px #333;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* 상품추가 */
+.add_prod_table{
+    width: 1100px;
+    border-collapse: collapse;
+    border:1px solid lightgray
+}
+.add_prod_table tr:not(:last-child){
+    border-bottom: 1px solid lightgray;
+}
+.add_prod_table th{
+    background-color: #eeee;
+    color: #333;
+    font-size: 1em;
+    padding:20px 10px;
+    border-right: 1px solid lightgray;
+}
+.add_prod_table td{
+    padding: 20px 10px;
+    font-size: 1em;
+}
+.add_prod_text{
+    width: 100%;
+    text-indent: 5px;
+    height: 40px;
+    border: none;
+    font-size: 1em;
+}
+.add_prod_bt{
+    width: 150px;
+    height: 40px;
+    background-color: #003494;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    float: right;
+}
+
+/* 바닥글 */
+footer{
+    margin-top: 50px;
+    width: 100%;
+    border-top: 1px solid lightgray;
+}
+#footer_top{
+    width: 1200px;
+    height: 40px;
+}
+#footer_top>li{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.8em;
+    color: gray;
+    float: left ;
+}
+#footer_top span{font-weight: bold;}
+#footer_bt{
+    width: 100%;
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#footer_content{
+    width: 1200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+}
+#footer_content img{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+#footer_content>article{
+    margin:0;
+    padding: 0;
+    width: 400px;
+    height: 200px;
+    color: grey;
+    font-size: .8em;
+    background-color: white;
+    margin-left: 10px;
+    border-right: 1px solid lightgray;
+}
+.f1{
+    width: 400px;
+    margin-left: 5px;
+}
+.f1>li{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+.f1 span{
+    font-weight: bold;
+    color: #333;
+}
+.f1>li:last-child{
+    border-bottom: none;
+}
+#footer_bt>section{
+    width: 1200px;
+    font-size: 0.8em;
+    color: gray;
+    border: none;
+}
